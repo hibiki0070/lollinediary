@@ -3,16 +3,58 @@
 <head>
 <title>롤 미드 일지</title>
 <meta charset="utf-8">
+<style>
+body{
+  margin:0;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding:20px;
+}
+ol{
+  border-right: 1px solid gray;
+  width:70px;
+  margin:0;
+  padding:20px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid2 {
+
+}
+
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127658552-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127658552-1');
+</script>
+
 </head>
 <body>
   <h1><a href="index.html">롤 일지</a></h1>
+  <div id="grid">
 <ol>
-  <li><a href="1.html">미드일지</a></li>
+  <li><a href="1.html" style="color:red">미드일지</a></li>
   <li><a href="10.html">탑일지</a></li>
   <li><a href="11.html">서폿일지</a></li>
 </ol>
+<div id="grid2">
 <p>
-  <iframe width="560" height="315"
+  <iframe width="560" height="315" gesture="media"
   src="yasuo.mp4" frameborder="0" allowfullsrcreen></iframe>
 </p>
 <h3>미드일지</h3>
@@ -30,7 +72,9 @@
   <h4>참고:<a href="https://www.op.gg" target="_blank" title="오피지지">
     오피지지</a></h4>
   <img src="cute girl.png" width="100%">
-  
+</div>
+</div>
+
   <div id="disqus_thread"></div>
 <script>
 

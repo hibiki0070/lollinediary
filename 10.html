@@ -3,14 +3,55 @@
 <head>
 <title>롤 탑 일지</title>
 <meta charset="utf-8">
+<style>
+body{
+  margin:0;
+}
+a {
+  color:black;
+  text-decoration: none;
+}
+h1 {
+  font-size: 60px;
+  text-align: center;
+  border-bottom: 1px solid gray;
+  margin: 0;
+  padding:20px;
+}
+ol{
+  border-right: 1px solid gray;
+  width:70px;
+  margin:0;
+  padding:20px;
+}
+#grid {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+}
+#grid2 {
+
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-127658552-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-127658552-1');
+</script>
 </head>
 <body>
+  <h1><a href="index.html">롤 일지</a></h1>
+  <div id="grid">
 <ol>
   <li><a href="1.html">미드일지</a></li>
   <li><a href="10.html">탑일지</a></li>
   <li><a href="11.html">서폿일지</a></li>
 </ol>
-<h1>탑일지</h1>
+<div id="grid2">
+<h3>탑일지</h3>
 <p>
   피오라의 패시브의 피 수급이 버프를 먹었다. 이 말은 즉 피오라의 초반 유지력이
   올라갔다는 것이다. 피오라가 탱커는 잘잡으므로 예외하고 그 이외를 상대할때는
@@ -21,8 +62,33 @@
   그나마 이길 가능성이 있던 초반도 이젠 매우 힘들어졌다.
 </p>
 
+
   <h4>참고:<a href="https://www.op.gg" target="_blank" title="오피지지">
     오피지지</a></h4>
+
   <img src="cute girl.png" width="100%">
+</div>
+</div>
+
+  <div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://loldiary.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </body>
 </html>
